@@ -3,13 +3,8 @@ assigned to sales representatives "jillian0" or "pamela0". Trace all matches.*/
 
 SELECT SalesPerson
 FROM salesLT.Customer
-WHERE SalesPerson IN ('jillian0', 'pamela0');
+WHERE SalesPerson IN ('adventure-works\jillian0', 'adventure-works\pamela0');
 
---No matching accounts found 
--- there are no records assigned to sales representatives 'jillian0' or 'pamela0' in the system.
-
-
-/* 2.Complete an auditing verification on transactions processed above $10,000 in total dues.*/
 
 SELECT TotalDue
 FROM[SalesLT].[SalesOrderHeader]
