@@ -6,6 +6,8 @@ FROM salesLT.Customer
 WHERE SalesPerson IN ('adventure-works\jillian0', 'adventure-works\pamela0');
 
 
+/* 2.Complete an auditing verification on transactions processed above $10,000 in total dues.*/
+
 SELECT TotalDue
 FROM[SalesLT].[SalesOrderHeader]
 WHERE TotalDue > 10000;
