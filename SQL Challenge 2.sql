@@ -1,4 +1,4 @@
-/* 1.A marketing campaign needs to target accounts 
+/* 1.A marketing campaign needs to target accounts  
 assigned to sales representatives "jillian0" or "pamela0". Trace all matches.*/
 
 SELECT SalesPerson
