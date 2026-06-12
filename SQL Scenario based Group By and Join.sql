@@ -1,4 +1,4 @@
-/*The HR manager wants to see how workload is distributed among the sales team. 
+/* 1 The HR manager wants to see how workload is distributed among the sales team. 
 Write a query to find out how many customers are assigned to each SalesPerson.*/
 
 
@@ -12,7 +12,7 @@ GROUP BY SalesPerson
 ORDER BY NumberofCustomers DESC;
 
 
-/*The production floor wants to analyze manufacturing costs based on product dimensions. 
+/* 2 The production floor wants to analyze manufacturing costs based on product dimensions. 
 Write a query to calculate the average StandardCost for each product Size.*/
 
 SELECT * 
@@ -23,7 +23,7 @@ FROM [SalesLT].[Product]
 GROUP BY SIZE
 ORDER BY AverageStandardCost DESC;
 
-/*The warehouse manager wants to see which orders contain a massive quantity of total items shipped. 
+/*3 The warehouse manager wants to see which orders contain a massive quantity of total items shipped. 
 Write a query to list each SalesOrderID along with the sum total of all OrderQty items packed within it. 
 Only display orders where the total quantity of items is greater than 20.*/
 
@@ -36,7 +36,7 @@ FROM [SalesLT].[SalesOrderDetail]
 GROUP BY SalesOrderID
 ORDER BY TotalItemsshipped DESC;
 
-/*The marketing team is reviewing the inventory catalog. 
+/* 4 The marketing team is reviewing the inventory catalog. 
 They want to know how many distinct products belong to each ProductModelID.
 Write a query displaying the model ID and the total count of products tied to it, 
 sorted from the highest count to the lowest.*/
@@ -50,7 +50,7 @@ FROM [SalesLT].[Product]
 GROUP BY ProductModelID
 ORDER BY TotalProducts DESC;
 
-/*The catalog management team wants to audit our inventory catalog. 
+/* 5 The catalog management team wants to audit our inventory catalog. 
 They need a list of all product model names available in the system,
 alongside the names of the actual products tied to them. 
 Because some product models are brand new and don't have physical products assigned to them yet, 
